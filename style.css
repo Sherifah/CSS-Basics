@@ -1,0 +1,225 @@
+/**CSS for basics
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+    margin: 0;
+  
+}
+
+h1 {
+    color: hotpink;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 10px dotted purple;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.job-title {
+    color: #999999;
+    font-weight: bold;
+}
+
+ul {
+    background-color: #eeeeee;
+    border: 5px solid purple;
+    padding: 20px 40px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a:link,
+a:visited {
+    color: #fb6542;
+}
+
+a:hover {
+    text-decoration: none;
+    color: green;
+}
+***/
+
+/****Cascade and specificity
+body {
+    color: green;
+}
+
+.my-class-1 {
+    color: inherit;
+}
+
+.my-class-2 {
+    color: initial;
+}
+
+.my-class-3 {
+    color: unset;
+}
+
+a {
+    color: red;
+}
+
+
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+#outer div ul .nav a {
+    background-color: yellow;
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+div div li a {
+    color: rebeccapurple;
+}
+
+#outer #inner ul .nav a {
+    background-color: initial;
+}
+
+
+.box {
+    border: 5px sold rebeccapurple;
+    background-color: lightgray;
+    padding: 40px;
+    margin: 40px;
+    width: 300px;
+    height: 150px;
+}
+
+.alternate {
+    box-sizing: border-box;
+    width: 390px;
+    height: 240px;
+}
+
+.box-1 {
+    border: 5px dotted black;
+    margin-top: 20px;
+    margin-right: 1em;
+    margin-bottom: 40px;
+    margin-left: 2em;
+    padding: 1em;
+}**/
+
+/**CSS TABLES PRACTICE**/
+/**html {
+    font-family: sans-serif;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid rebeccapurple;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    background-color: #ff33cc;
+}
+
+thead th, tfoot th{
+    font-family: 'Rock Salt', cursive;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+thead th, tfoot th, tfoot td {
+    background: linear-gradient(to bottom, rgba(109, 109, 109, 0.1), rgba(109, 109, 109, 0.5));
+    border: 2px solid purple;
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+}
+
+thead th:nth-child(2) {
+    width: 20%;
+}
+
+thead th:nth-child(3) {
+    width: 15%;
+}
+
+thead th:nth-child(4) {
+    width: 35%;
+}
+
+td, th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ff33cc;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e495e4;
+}
+
+caption {
+    font-family: 'Rock Salt', cursive;
+    padding: 20px;
+    font-style: italic;
+    caption-side: bottom;
+    color: #666;
+    text-align: right;
+    letter-spacing: 1px;
+}**/
+
+html {
+    font-family: sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    border: 1px solid #999;
+    text-align: top;
+}
+
+tfoot {
+    border-top: 1px solid #999;
+}
+
+thead th, tbody th, tbody td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+tfoot th, tfoot td {
+    padding: 0.5em;
+}
+
+tr .numbers {
+    text-align: right;
+}
+
+tr .letters {
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #eee;
+}
